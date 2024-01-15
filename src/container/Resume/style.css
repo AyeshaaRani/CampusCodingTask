@@ -1,0 +1,160 @@
+.resume {
+  width: 100%;
+  background-color: #fff;
+}
+
+.heading-resume {
+  margin-left: 20px;
+}
+
+.resume-container {
+  display: flex;
+  margin: 0 8px 20px 9px;
+}
+
+.left-side {
+  width: 55%;
+  padding: 10px;
+}
+
+.right-side {
+  width: 45%;
+  margin-top: 2.5rem;
+  padding: 10px;
+  margin: 12px 0 50px 0;
+}
+
+.line {
+  border: 1px solid #182d39f9;
+  border-radius: 7px;
+  padding: 2px;
+}
+
+.education-container {
+  display: flex;
+  justify-content: baseline;
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-info {
+  display: flex;
+  margin: 3px;
+}
+
+.timeline-divider::after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background-color: #7a7a7a1f;
+  top: 0;
+  bottom: 0;
+}
+
+.timeline-indicator::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 3px solid #182d39f9;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 1.2rem;
+  margin-left: -8px;
+  z-index: 1;
+}
+
+.item-p {
+  color: #555;
+}
+
+.right-content {
+  margin: 12px 0 20px 17px;
+}
+
+.left-content {
+  max-width: 40%;
+  display: table-cell;
+  padding-right: 28px;
+  min-height: 100%;
+  text-align: right;
+  vertical-align: top;
+  margin: 12px 0 20px 0;
+}
+
+.item-company {
+  display: block;
+  margin: 0 0 4px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.45em;
+  color: #a5a6a7;
+}
+
+.knowldge {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.knowldges {
+  background-color: #182d39f9;
+  color: #fff;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 5px 10px;
+  line-height: 1.2;
+  margin: 3px 2px;
+  font-size: 13px;
+}
+
+.cve {
+  margin-left: -8px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-name {
+  font-size: 13px;
+  line-height: 1.1em;
+  margin: 0 0 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.skill-value {
+  font-size: 11px;
+  line-height: 1.1em;
+  margin: 7px 4px 4px 0;
+  color: #888;
+}
+
+@media only screen and (max-width: 769px) {
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+
+  .line {
+    border: 1px solid #182d39f9;
+    border-radius: 7px;
+    padding: 1px;
+    height: 8px;
+    width: 100%;
+  }
+
+  .education-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

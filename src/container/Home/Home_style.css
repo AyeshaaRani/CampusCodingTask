@@ -1,0 +1,108 @@
+/* Home_style.css */
+
+.home {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.name-heading {
+  font-size: 6rem;
+  line-height: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: #555;
+  font-size: 1.2rem;
+  line-height: 3rem;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  position: relative;
+}
+
+.skill-fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+/* Home_style.css */
+
+/* ... (existing styles) */
+
+.skill-fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-enter {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.slide-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+@media only screen and (min-width:551px) and (max-width:769px) {
+  .heading {
+    margin-top: 25%;
+  }
+}
+
+
+
+@media only screen and (max-width:551px) {
+  .name-heading {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  
+  .sub {
+    color: #555;
+    font-size: 1rem;
+    line-height: 2rem;
+    
+  }
+ 
+}

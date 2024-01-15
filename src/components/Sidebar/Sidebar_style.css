@@ -1,0 +1,96 @@
+.sidebar-container {
+ 
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.sidebar-name{
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+ 
+  
+}
+.sidebar-sub{
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.contact-icons {
+
+  display: flex;
+  margin-top: 40px;
+  
+}
+
+.contact-icons a {
+  color:white;
+  text-decoration: none;
+  font-size:24px;
+}
+
+.contact-icons a:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.166);
+}
+
+.image {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding: 5px;
+  margin-top: 0.5rem;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-button .btn-primary{
+  font-size: 22px;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  background-color:  #182d39f9;
+    color: #fff;
+    border-color: #fff;
+    margin-right: 0;
+    border: 2px solid #fff;
+    border-radius: 5rem;
+}
+.header-button .btn-primary:hover {
+  transform: scale(1.1);
+  background-color:#f0f0f0; /* Change the color on hover */
+  color: #182d39f9; /* Change the color on hover */
+}
+.a{
+  text-decoration: none;
+  padding:12px;
+}
+
+/* styles.css */
+
+@media (max-width: 769px){
+  .sidebar-name {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: -2px;
+  }
+  .image {
+   
+    width: 7rem;
+    height: 7rem;
+    padding: 7px;
+    margin-top: 0;
+  }
+}
+
+

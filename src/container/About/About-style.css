@@ -1,0 +1,329 @@
+/* AboutMe.css */
+
+.about {
+ 
+  background-color: #fff;
+  width: 100%;
+  
+}
+.about-me-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding:15px;
+  overflow: hidden;
+  margin-left: 0px;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.about-me-heading {
+  width: 48%;
+  /* Adjust the width for the heading section */
+}
+
+.about-me-details {
+  width: 48%;
+  /* Adjust the width for the details section */
+  line-height: 2rem;
+}
+
+.about-me-details ul {
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.email{
+  color:black;
+  font-size: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  white-space: normal;
+}
+.about-me-details ul span {
+  color: #182d39f9;
+  font-weight: 600;
+}
+
+.about-me-details li {
+  margin-bottom: 10px;
+}
+
+/* WhatIDo.css */
+
+.what-i-do-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  /* Set the maximum width as needed */
+  margin: 0 auto;
+  /* Center the content horizontally */
+  padding: 20px;
+}
+
+.what-i-do-section {
+  width: 48%;
+  /* Adjust the width for each section */
+}
+
+.what-i-do-section h2 {
+  margin-bottom: 10px;
+}
+
+.what-i-do-section p {
+  margin-bottom: 20px;
+}
+
+.whatdoIdoIcons {
+  position: relative;
+  font-size: 42px;
+  color: #182d39f9;
+  font-weight: 900;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+/* Testimonials.css */
+
+.carousel-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease; /* Add a transition for the 'transform' property */
+}
+
+.carousel-item {
+  flex: 0 0 350px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  user-select: none;
+  transition: transform 0.5s ease; /* Add a transition for the 'transform' property */
+}
+
+.testimonial-content {
+  border: 2px solid #3934341f;
+  border-radius: 24px;
+  padding: 8px;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: -8%;
+  position: relative;
+  z-index: 2;
+}
+
+.para {
+  margin-top: 2rem;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75em;
+  color: #555;
+}
+
+h6 {
+  color: #0099cc;
+}
+
+.carousel-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+
+.nav-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  color: #182d39f9;
+  font-size: 24px;
+  border: 1px solid #555;
+  border-radius: 3px;
+  margin: 3px;
+  display: flex;
+  transition: color 0.3s ease, background-color 0.3s ease; /* Add transitions for color and background-color */
+}
+
+.nav-button:hover {
+  background-color: #182d39f9;
+  color: #ffff;
+}
+
+/* Progress Report */
+.progress-container {
+  padding: 20px;
+}
+
+.report-heading {
+  line-height: 4rem;
+
+}
+
+.reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.report-item {
+  position: relative;
+  text-align: center;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 15px;
+  /* Adjust margin as needed */
+  background: #fff;
+  padding: 25px 10px 15px;
+  border: 2px solid #e5e5e5;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+
+.report-item h2 {
+  margin-top: 10px;
+  /* Adjust spacing between title and total */
+}
+
+.totals {
+  color: #7A7A7A;
+  font-size: 36px;
+}
+
+.report-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.report-icons {
+  color: #182d39f9;
+  font-size: 40px;
+}
+
+.report-name {
+  font-size: 20px;
+  line-height: 4rem;
+
+
+}
+
+.progress-container::after {
+  content: '';
+  display: block;
+  width: 80%;
+  height: 2px;
+  background-color: #282121b2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* What i want to acheive */
+.acheive-container{
+  margin-left: 12px;
+}
+.acheive-heading {
+  line-height: 3rem;
+  font-size: 24px;
+  color: #555;
+}
+.para-acheive{
+  margin: 0 0 10px;
+  color: #555;
+}
+
+.certifications {
+  list-style: none;
+  line-height: 0.5rem;
+  color: #7A7A7A;
+}
+
+.points {
+  
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.75rem;
+  color: #555;
+}
+
+
+
+
+@media (max-width: 769px){
+  .about-me-container {
+    flex-direction: column;
+    /* Change to a single column layout on small screens */
+    align-items: center;
+    /* Center the content on small screens */
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .about-me-heading,
+  .about-me-details {
+    width: 100%;
+    
+  }
+  .email{
+    color: black;
+  }
+
+  /* WhatIDo */
+  .what-i-do-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+
+  .what-i-do-section {
+    width: 100%;
+    /* Adjust the width for each section */
+  }
+
+
+  .carousel-item {
+    flex: 0 0 100%;
+    margin-left: auto;
+  }
+
+  .testimonial-content {
+    margin-top: -6%;
+  }
+
+  .carousel-image {
+    margin-left: -26rem;
+   
+  }
+
+  /* progress reports */
+
+  .report-item {
+    width: 100%;
+    /* Set width to 100% on smaller screens */
+    margin: 0 0 30px 0px;
+    /* Adjust margin for smaller screens */
+    height: 200px
+  }
+}

@@ -1,0 +1,230 @@
+.contact-container{
+  display: flex;
+}
+
+.contact-items-left{
+  width: 27vw;
+  padding: 10px;
+}
+.contact-items-right{
+  width:27vw;
+  margin-top:2.5rem;
+  padding: 10px;
+  margin: 12px 0 50px 0
+  
+}
+
+.contact-mail{
+  text-decoration: none;
+  color: black;
+}
+.contact-p{
+  font-size: 15px;
+  margin: 8px 0 0;
+}
+.mail, 
+.location, .freelance{
+  border:2px solid  #e5e5e5;
+  margin:18px;
+  padding: 20px;
+  border-radius: 9px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact-form{
+  margin-top: 1.5rem;
+  display: flex;
+  position: relative;
+ 
+
+}
+.controlswrapper,
+.descriptionwrapper{
+  margin: 3px;
+}
+.input, .description{
+  width: 30vh;
+   border-radius: 5px;
+   height: 36px;
+   border:3px solid #e5e5e5;
+   position: relative;
+   margin-bottom:1.5rem;
+ }
+ .description{
+  height:9.8rem;
+} 
+
+.nameLabel,
+.emailLabel,
+.subjectLabel,
+.descriptionLabel {
+  position: absolute;
+ margin-left: -9rem;
+  transition: all 0.5s ease;
+margin-top: 4px;
+color: #938f8f;
+}
+.input:focus + .nameLabel,
+.input:valid+ .nameLabel,
+.input:focus + .emailLabel,
+.input:valid+.emailLabel,
+.input:focus + .subjectLabel,
+.input:valid+.subjectLabel,
+.description:focus + .descriptionLabel,
+.description:valid + .descriptionLabel
+{
+ 
+ margin-top:-1.5rem;
+ margin-left: -11;
+ color: #1d1d1d;
+}
+.input:focus,
+  .description:focus {
+   outline: none;
+   border-color: #182d39f9;
+     
+   }
+   .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 9rem;
+    color: #1d1d1d;
+    border: 2px solid #182d39f9;
+    border-radius: 5rem;
+    height: 3rem;
+  }
+  .bttn{
+   display: flex;
+   justify-content: center;
+  }
+  .btn:hover{
+    background-color:  #182d39f9;
+    color:#fff;
+    border-color: #e5e5e5;
+  }
+  
+  .error-message{
+    position: absolute;
+     display: inline-block;
+     padding: 0px 5px;
+     font-size: 0.9em;
+     line-height: 1.75em;
+     margin-top: 2rem;
+     margin-left: -8rem;
+     color: #fff;
+     background: #ff4e4e;
+     z-index: 1;    
+  }
+  
+  .error-message.show-arrow::after{
+     content: " ";
+         position: absolute;
+         left: 9px;
+         bottom: 100%;
+         width: 0;
+         height: 0;
+         border-bottom: 10px solid #ff4e4e;
+         border-right: 10px solid transparent;
+     }
+  
+
+     @media only screen and (min-width:789px) and (max-width:1024px) {
+
+      .contact-container{
+       width:90vw
+      }
+      
+      .contact-items-left{
+        width: 48vw;
+        padding: 10px;
+      }
+      .contact-items-right{
+        width:48vw;
+        margin-top:2.5rem;
+        padding: 10px;
+      }
+      .input, .description{
+        width: 25vw;
+       
+       }
+       
+.nameLabel,
+.emailLabel,
+.subjectLabel,
+.descriptionLabel {
+ margin-left: -14rem;
+ 
+
+
+}
+
+     }
+
+
+     @media only screen and (max-width:768px) {
+      .contact-container{
+        flex-direction: column;
+      }
+      .contact-items-left{
+        width: 90vw;
+        
+      }
+      .contact-items-right{
+        width:90vw;
+        
+        
+      }
+
+.contact-form{
+  flex-direction: column;
+}
+.input, .description{
+  width: 90vw;
+}
+.controlswrapper,
+.descriptionwrapper{
+  display: block;
+  
+  
+}
+.nameLabel,
+.emailLabel,
+.subjectLabel
+ {
+ 
+margin-left:3px;
+margin-top: -3.5rem;
+ 
+}
+.descriptionLabel{
+  margin-left:3px;
+  margin-top: -11.5rem;
+}
+
+.input:focus + .nameLabel,
+.input:valid+ .nameLabel,
+.input:focus + .emailLabel,
+.input:valid+.emailLabel,
+.input:focus + .subjectLabel,
+.input:valid+.subjectLabel
+{
+
+  margin-top: -5rem;
+}
+
+.description:focus + .descriptionLabel,
+.description:valid + .descriptionLabel{
+
+  margin-top: -13rem;
+}
+.error-message{
+  margin-top: -2rem;
+  margin-left: 4rem;
+}
+     } 
+    
